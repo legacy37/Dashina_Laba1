@@ -55,6 +55,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="RectangleCalculator.cs" />
+    <Compile Include="SimpsonCalculator.cs" />
+    <Compile Include="SimpsonCaluculator.cs" />
+    <Compile Include="TrapezoidCalculator.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -63,6 +67,9 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Integrals.cs" />
+    <Compile Include="Interface1.cs" />
+    <Compile Include="lab_1_8.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>

@@ -25,10 +25,36 @@ namespace lab_1_8
             InitializeComponent();
         }
 
-        private void btnCalculate_Click(object sender, RoutedEventArgs e)
+        private void CalculateIntegral()
         {
             double upperBound = Convert.ToDouble(tbUpperBound.Text);
             double lowerBound = Convert.ToDouble(tbLowerBound.Text);
+            int count = Convert.ToInt32(tbPartCount.Text);
+            ICalculatorIntegral calculatorIntegralT = new TrapezoidCalculator();
+            double outputTrap = calculatorIntegralT.Calculate(upperBound, lowerBound, count, x=>(2*x - Math.Log(11*x)-1));
+            tbMethodTrapezoid.Text = Convert.ToString(outputTrap);
+            ICalculatorIntegral calculatorIntegralS = new SimpsonCalculator();
+            double outputSim = calculatorIntegralS.Calculate(upperBound, lowerBound, count, x => (2 * x - Math.Log(11 * x) - 1));
+            tbMethodSimpson.Text = Convert.ToString(outputSim);
+
+        }
+
+        private ICalculatorIntegral GetCalculator()
+        {
+            switch (cmbBoxIntegralType.SelectedIndex)
+            {
+                case 0:
+                    return new TrapezoidCalculator();
+                case 1:
+                    return new SimpsonCalculator();
+                default:
+                    return new TrapezoidCalculator();
+            }
+        }
+
+        private void btnCalculate_Click(object sender, RoutedEventArgs e)
+        {
+            CalculateIntegral();
         }
     }
 }
