@@ -29,11 +29,8 @@
         <TextBox Name="tbLowerBound" Grid.Row="2" Grid.Column="2" Margin="3"></TextBox>
         <TextBlock Grid.Row="3" Grid.Column="1" VerticalAlignment="Center">Количество разбиений</TextBlock>
         <TextBox Name="tbPartCount" Grid.Row="3" Grid.Column="2" Margin="3"></TextBox>
-        <TextBlock Grid.Row="5" Grid.Column="1" VerticalAlignment="Center">Полученный результат:</TextBlock>
-        <TextBlock Grid.Row="6" Grid.Column="1" VerticalAlignment="Center">Метод трапеции:</TextBlock>
-        <TextBlock Grid.Row="7" Grid.Column="1" VerticalAlignment="Center">Метод Симпсона:</TextBlock>
-        <TextBox Name="tbMethodTrapezoid" Grid.Row="6" Grid.Column="2" Margin="3"></TextBox>
-        <TextBox Name="tbMethodSimpson" Grid.Row="7" Grid.Column="2" Margin="3"></TextBox>
+        <TextBlock Grid.Row="6" Grid.Column="1" VerticalAlignment="Center">Ответ:</TextBlock>
+        <TextBox Name="tbAnswer" Grid.Row="6" Grid.Column="2" Margin="3"></TextBox>
         <ComboBox Name="cmbBoxIntegralType" Margin="3" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2">
             <ComboBoxItem>Метод трапеции</ComboBoxItem>
             <ComboBoxItem>Метод Симпсона</ComboBoxItem>
