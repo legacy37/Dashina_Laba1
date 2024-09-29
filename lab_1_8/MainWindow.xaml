@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:lab_1_8"
         mc:Ignorable="d"
-        Title="Павлова Д.Г. 3-47" Height="450" Width="800">
+        Title="Павлова Д.Г. 3-47" Height="305" Width="450" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
