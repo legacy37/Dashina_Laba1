@@ -25,7 +25,6 @@ namespace lab_1_8
                 }
             }
             return (h / 3) * sum;
-
         }
     }
 }

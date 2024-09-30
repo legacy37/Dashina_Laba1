@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:lab_1_8"
         mc:Ignorable="d"
         Title="Павлова Д.Г. 3-47" Height="250" Width="450" WindowStartupLocation="CenterScreen">
-    <Grid>
+    <Grid Background="LightGray">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
             <ColumnDefinition Width="150"/>
@@ -29,12 +29,12 @@
         <TextBox Name="tbLowerBound" Grid.Row="2" Grid.Column="2" Margin="3"></TextBox>
         <TextBlock Grid.Row="3" Grid.Column="1" VerticalAlignment="Center">Количество разбиений</TextBlock>
         <TextBox Name="tbPartCount" Grid.Row="3" Grid.Column="2" Margin="3"></TextBox>
-        <TextBlock Grid.Row="5" Grid.Column="1" VerticalAlignment="Center">Ответ:</TextBlock>
+        <TextBlock Grid.Row="5" Grid.Column="1" VerticalAlignment="Center" >Ответ:</TextBlock>
         <TextBox Name="tbAnswer" Grid.Row="5" Grid.Column="2" Margin="3"></TextBox>
         <ComboBox Name="cmbBoxIntegralType" Margin="3" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2">
             <ComboBoxItem>Метод трапеции</ComboBoxItem>
             <ComboBoxItem>Метод Симпсона</ComboBoxItem>
         </ComboBox>
-        <Button Name="btnCalculate" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" Margin="3" Click="btnCalculate_Click">Посчитать</Button>
+        <Button Name="btnCalculate" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" Margin="3" Click="btnCalculate_Click" BorderBrush="LightGray">Посчитать</Button>
     </Grid>
 </Window>
