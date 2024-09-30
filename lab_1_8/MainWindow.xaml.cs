@@ -44,7 +44,7 @@ namespace lab_1_8
                 case 1:
                     return new SimpsonCalculator();
                 default:
-                    return;
+                    return new TrapezoidCalculator();
             }
         }
 
