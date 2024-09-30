@@ -30,13 +30,9 @@ namespace lab_1_8
             double upperBound = Convert.ToDouble(tbUpperBound.Text);
             double lowerBound = Convert.ToDouble(tbLowerBound.Text);
             int count = Convert.ToInt32(tbPartCount.Text);
-            ICalculatorIntegral calculatorIntegralT = new TrapezoidCalculator();
-            double outputTrap = calculatorIntegralT.Calculate(upperBound, lowerBound, count, x=>(2*x - Math.Log(11*x)-1));
-            tbMethodTrapezoid.Text = Convert.ToString(outputTrap);
-            ICalculatorIntegral calculatorIntegralS = new SimpsonCalculator();
-            double outputSim = calculatorIntegralS.Calculate(upperBound, lowerBound, count, x => (2 * x - Math.Log(11 * x) - 1));
-            tbMethodSimpson.Text = Convert.ToString(outputSim);
-
+            ICalculatorIntegral calculatorIntegralT = GetCalculator();
+            double outputTrap = calculatorIntegralT.Calculate(upperBound, lowerBound, count, x => (2 * x - Math.Log(11 * x) - 1));
+            tbAnswer.Text = Convert.ToString(outputTrap);
         }
 
         private ICalculatorIntegral GetCalculator()
@@ -48,7 +44,7 @@ namespace lab_1_8
                 case 1:
                     return new SimpsonCalculator();
                 default:
-                    return;
+                    return new TrapezoidCalculator();
             }
         }
 

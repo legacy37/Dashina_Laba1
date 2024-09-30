@@ -8,6 +8,6 @@ namespace lab_1_8
 {
     public interface ICalculatorIntegral
     {
-        double Calculate(double lower, double upper, int count, Func<double, double> fun);
+        double Calculate(double upper, double lower, int count, Func<double, double> fun);
     }
 }
